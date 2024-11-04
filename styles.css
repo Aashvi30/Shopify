@@ -1,0 +1,243 @@
+/* Reset basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-page background with fixed effect */
+body {
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.background-image {
+  background-image: url('https://i.pinimg.com/564x/48/06/bf/4806bf7848b4917496de5dbc1f491bb3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* Container for search bar, navbar, and center text */
+.content {
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+  padding-top: 10%;
+}
+
+/* Search bar styling */
+.search-bar {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #050202;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #574d4d;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #130303;
+}
+
+.search-bar input:hover,
+.search-bar input:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: 2px #130303;
+}
+
+/* Navbar styling */
+.navbar {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #0a0101;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  transition: background-color 0.1s ease, outline 0.1s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 1px solid #0a0101;
+}
+
+/* Center text styling */
+.center-text {
+  text-align: center;
+  color: black;
+  margin-top: 20vh;
+  margin-left: -30%;
+  transition: transform 0.3s ease;
+}
+
+.center-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.center-text p {
+  font-size: 1.2rem;
+}
+
+.center-text:hover {
+  transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.social-media {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  display: flex;
+  gap: 30px;
+}
+
+.social-media a {
+  color: rgb(212, 54, 107);
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+  color: rgba(179, 52, 196, 0.849);
+}
+
+/* Featured Products Section */
+.featured-section {
+  background-color: #ebb1b1fa;
+  padding: 50px;
+  text-align: center;
+  color: #333;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.featured-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: #555;
+  font-size: 1rem;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(40, 64, 145, 0.637);
+}
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ebb1b1fa;
+}
+
+.footer-contact {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+/* Buy Now Button Styling */
+.buy-now-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #1d1b1bc9;
+  transform: scale(1.05);
+}
